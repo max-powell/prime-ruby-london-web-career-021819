@@ -1,11 +1,10 @@
 def prime?(num)
   factors = 0
-  x = num/2
-  while factors == 0 && x != 1
-    if num % x == 0
-      factors += 1
-    x -= 1
+  x = (num ** 0.5).floor
+  for i in (2...x) do
+    if num % i == 0
+      return false
     end
   end
-  factors == 1 ? true : false
+  true
 end
