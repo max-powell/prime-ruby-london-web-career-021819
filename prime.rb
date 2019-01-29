@@ -1,5 +1,3 @@
-require pry
-
 def prime?(num)
   if (2..3).include?(num)
     return true
@@ -7,7 +5,6 @@ def prime?(num)
   if num > 3
     factors = 0
     x = (num ** 0.5).floor
-    binding.pry
     for i in (2..x) do
       if num % i != 0
         return true
