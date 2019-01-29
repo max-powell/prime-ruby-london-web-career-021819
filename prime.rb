@@ -3,7 +3,7 @@ def prime?(num)
   return false if num < 2
   x = (num ** 0.5).floor
   for i in (2..x) do
-    if (num/i) % 1 == 0
+    if (num/i.to_f) % 1 == 0
       return false
     end
   end
