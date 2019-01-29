@@ -1,15 +1,11 @@
 def prime?(num)
-  if (2..3).include?(num)
-    return true
-  end
-  if num > 3
-    factors = 0
-    x = (num ** 0.5).floor
-    for i in (2..x) do
-      if num % i != 0
-        return true
-      end
+  return true if (2..3).include?(num)
+  return false if num < 2
+  x = (num ** 0.5).floor
+  for i in (2..x) do
+    if (num/i) % 1 == 0
+      return false
     end
   end
-  false
+  true
 end
