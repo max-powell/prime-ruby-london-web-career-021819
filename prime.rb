@@ -1,5 +1,5 @@
 def prime?(num)
-  if (1..3).include?(num)
+  if (2..3).include?(num)
     return true
   end
   if num > 3
