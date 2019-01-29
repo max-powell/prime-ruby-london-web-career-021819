@@ -1,5 +1,5 @@
 def prime?(num)
-  if (1..3).includes?(num)
+  if (1..3).include?(num)
     return true
   end
   factors = 0
